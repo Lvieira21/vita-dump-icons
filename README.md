@@ -13,7 +13,7 @@ To be used with: [Electry VitaPresence](https://github.com/Electry/VitaPresence)
 
 ## GUI
 
-The GUI was written using [Python Eel](https://github.com/samuelhwilliams/Eel) and currently I'm only capable of building the macOS version of the app, in one day or so I'll be building the Windows version.
+The GUI was written using [Materialize framework](https://materializecss.com/) and [Python Eel](https://github.com/samuelhwilliams/Eel) and currently I'm only capable of building the macOS version of the app, in one day or so I'll be building the Windows version.
 <div style="text-align:center"><img src="https://github.com/Lvieira21/vita-dump-icons/blob/main/Assets/screenshot.png?raw=true" /></div>
 
 #### Notice: in order for it to work, you need Google Chrome installed.
@@ -23,12 +23,25 @@ The GUI was written using [Python Eel](https://github.com/samuelhwilliams/Eel) a
 
 ## Building
 
-If, in anycase, you want to compile yourself:
+
+If in any case, you want to compile yourself, you'll need:
+
+| Lib  | Ver  | Info  | 
+|---|---|---|
+|  Python | 3.8.X  |   | 
+| pip  |  20.1.1 | Package Installer  | 
+| pipenv  |  2020.8.13 | To create your virtual env  | 
+|  Pillow |  7.2.0 | To resize images  | 
+|  Eel |  0.14.0 | Python Lib to make offline GUI  | 
+| tk  |  0.1.0 | Python GUI Lib used to access folders  | 
+
+And run the commands bellow:
+
 ```shell
 git clone https://github.com/Lvieira21/vita-dump-icons.git
 cd vita-dump-icons
 git submodule update --init
-python -m eel main.py _view --onefile --noconsole --icon "/Users/lucasvieira/Documents/Programação/PythonWorkspace/VitaIconDump/_view/_icons/psv.icns" -n 'Vita Icon Downloader
+python -m eel main.py _view --onefile --noconsole --icon <ico file for windows and icns file for macOS> -n <app_name>
 ```
 
 ## Known Bugs
