@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="Vita Icon FTP Downloader" description="PS vita icon downloader script GUI">
+    <title>Vita Icon FTP Donwloader</title>
+    <meta name='viewport' content='width=700, height="400" , initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/materialize.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="_icons/ps-vita.ico">
+
+</head>
+
+<!-- ! Materialize New color: #ffab40 <- Old: #26a69a-->
+
+<body>
+    <div class="row">
+    </div>
+
+    <div class="row">
+    </div>
+
+    <div class="row">
+        <div class="col s1">
+        </div>
+
+        <div class="col s1">
+            <img src="_img/enso crop.jpg" alt="enso" class="responsive-img">
+        </div>
+
+        <div class="col s6">
+        </div>
+
+        <div class="col s4">
+            <h6 class="white-text">PS Vita Icon Downloader</h6>
+        </div>
+    </div>
+
+    <div class="card-panel grey-text">
+        <form class="col s12">
+            <div class="row">
+
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">home</i>
+                    <input id="vita_ip" type="text" class="validate">
+                    <label for="vita_ip">PS Vita IP</label for="vita_ip">
+                </div>
+
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">device_hub</i>
+                    <input id="port" type="text" class="validate">
+                    <label for="port">Port</label for="port">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s1">
+                    <a class="waves-effect waves-light btn-small orange" onclick="select()">
+                        <i class="material-icons">folder</i>
+                    </a>
+                </div>
+                <div class="col s6">
+                    <input value="Select folder..." id="folder" type="text" disabled class="validate">
+                </div>
+                <div class="col s1">
+
+                </div>
+                <div class="col s4">
+                    <a class="waves-effect waves-dark btn-large orange white-text" onclick="download_icons()">
+                        <i class="material-icons left">cloud_download</i>
+                        Download icons
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright black">
+        <div class="row">
+            <div class="col s11">
+                <a class="white-text">Thank you for using it!</a>
+            </div>
+            <a target="_blank" href="https://github.com/lvieira21"><img src="_icons/github.png" width="30"
+                    height="30"></img></a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src='_js/jquery.mask.js'></script>
+    <script src='_js/main.js'></script>
+    <script src="_js/materialize.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="_js/linker.js"></script>
+</body>
+
+</html>
