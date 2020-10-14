@@ -50,3 +50,10 @@ python -m eel main.py _view --onefile --noconsole --icon <ico file for windows a
 
 
 ##### If you find bugs, don't hesitate to contact me.
+
+
+## TO DO
+- Windows Build
+- Figure out the freezing bug with directory selection
+- Fix Toasts' sizes
+- Figure out how to implement a progress bar
