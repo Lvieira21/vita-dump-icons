@@ -36,4 +36,4 @@ python -m eel main.py _view --onefile --noconsole --icon "/Users/lucasvieira/Doc
 - If you cancel the directory selection prompt, the app hangs;
 
 
-##### If you find bugs, don't hesitate in contacting me.
+##### If you find bugs, don't hesitate to contact me.
