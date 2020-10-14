@@ -13,17 +13,26 @@ def select_folder():
 
 @eel.expose
 def run_app(ps_vita_ip, port, directory):
+    if (directory == 'Select folder...'):
+        eel.show_confirmation("Select folder first!")
+        return
+    eel.show_confirmation("Make sure the PSV has FTP turned on")
     port = int(port)
     print(ps_vita_ip)
     print(port)
     print(directory)
     ftp = ftp_downloader.start_ftp(ps_vita_ip, port)
     if (ftp):
-        ftp_downloader.create_down_dir(directory)
+        print(ftp)
         nomes = ftp_downloader.scan_dirs(ftp)
         ftp_downloader.download_icons(ftp, nomes, directory)
-        print("All files downloaded successfully")
         ftp_downloader.close_conn(ftp)
+        print("All files downloaded successfully")
+        eel.show_confirmation("All files downloaded successfully")
+    else:
+        print("There's something wrong FTPWise")
+        eel.show_confirmation("Sorry, couldn't complete your request")
+       
 
 eel.init("_view")
-eel.start("index.html", size=(800,420))
+eel.start("index.html", size=(800,423))

@@ -9,23 +9,14 @@ APPMETA_VITA = 'ur0:/appmeta'
 
 def start_ftp(psv_ip, port):
     ftp = FTP()
-    ftp.connect(psv_ip, port)
     try: 
+        ftp.connect(psv_ip, port)
         ftp.login()
         print ("Login successfull")
         return ftp
     except:
         close_conn(ftp)
         return False
-    
-
-def create_down_dir(download_icon_to):
-    try:
-        os.mkdir(download_icon_to)
-    except OSError:
-        print ("Creation of the directory %s failed" % download_icon_to)
-    else:
-        print ("Successfully created the directory %s " % download_icon_to)
 
 def scan_dirs(ftp):
     ftp.cwd(APPMETA_VITA)

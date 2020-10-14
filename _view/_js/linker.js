@@ -17,3 +17,8 @@ function show_path(folder_path) {
     var textbox = document.getElementById("folder");
     textbox.value = folder_path;
 }
+
+eel.expose(show_confirmation);
+function show_confirmation(statement){
+    M.toast({html: statement, classes: 'rounded'})
+}
