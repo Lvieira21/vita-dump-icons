@@ -7,6 +7,8 @@ Small script written in Python to dump ps vita icons to the PC from Vita's appme
 
 This script is intended to donwload ps vita installed app icons in order to upload to a discord rich presence app. It finds each icon0 from each appmeta game/app folder, downloads through FTP, saves it to a folder you choose under the gameID name in PNG format, and resizes it to discord app Standards.
 
+<div style="text-align:center"><img src="https://github.com/Lvieira21/vita-dump-icons/blob/main/Assets/discordDevEx.png?raw=true" /></div>
+
 To be used with: [Electry VitaPresence](https://github.com/Electry/VitaPresence) and [MightyV vita-presence-server](https://github.com/TheMightyV/vita-presence-the-server)
 
 ## GUI
