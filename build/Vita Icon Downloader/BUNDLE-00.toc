@@ -1,0 +1,4 @@
+([('Vita Icon Downloader',
+   '/Users/lucasvieira/Documents/Programação/PythonWorkspace/VitaIconDump/dist/Vita '
+   'Icon Downloader',
+   'EXECUTABLE')],)
