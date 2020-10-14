@@ -11,7 +11,9 @@ This script is intended to donwload ps vita installed app icons in order to uplo
 
 The GUI was written using [Python Eel](https://github.com/samuelhwilliams/Eel) and currently I'm only capable of building the macOS version of the app, in one day or so I'll be building the Windows version.
 <div style="text-align:center"><img src="https://github.com/Lvieira21/vita-dump-icons/blob/main/Assets/screenshot.png?raw=true" /></div>
+
 ### Notice: in order for it to work, you need Google Chrome installed.
+### Notice 2: Windows build in the making
 
 ## Building
 
